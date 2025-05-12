@@ -160,14 +160,14 @@ void DrawD2DImage()
 	static float i = 0.0f;
 	if (!MainID2D1BitmapBrush)
 	{
-		MainID2D1Bitmap = LoadBitmapFromFile(L"ichigo.png");
+		MainID2D1Bitmap = LoadBitmapFromFile(L"image.jpeg");
 		MainID2D1HwndRenderTarget->CreateBitmapBrush(
 			MainID2D1Bitmap,
 			&MainID2D1BitmapBrush
 		);
 		return;
 	}
-	D2D1_ROUNDED_RECT round_rect_size = D2D1::RoundedRect(D2D1::RectF(i+20.0f, 100.0f, i+200.0f, 300.0f), 10.0f, 10.0f);
+	D2D1_ROUNDED_RECT round_rect_size = D2D1::RoundedRect(D2D1::RectF(i + 20.0f, 150.0f, i + 220.0f, 350.0f), 10.0f, 10.0f);
 
 	const D2D1_SIZE_F bitmapSize = MainID2D1Bitmap->GetSize();
 	const float _width = (round_rect_size.rect.right - round_rect_size.rect.left) / bitmapSize.width;
