@@ -35,3 +35,5 @@
 - 设置 ID2D1BitmapBrush 绘制参数
 - 创建 D2D1_ROUNDED_RECT 设置绘制范围
 - 绘制图片
+
+
